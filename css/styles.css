@@ -1,0 +1,73 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Space Mono', monospace; */
+:root {
+  --font-family-text: 'Space Mono', monospace;
+  --font-family-404: 'Inconsolata', monospace;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --font-size-x-large: calc(2.775rem + 1vw);
+  --font-size-large: calc(1.275rem + 1vw);
+  --font-size-normal: calc(0.9rem + 1vw);
+  --font-size-small: calc(1.275rem + 1vw);
+
+  --bg-color:#ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  width: 100%;
+  background: var(--bg-color);
+}
+
+header {
+  width: 100%;
+}
+
+header h3 {
+  font-family: var(--font-family-404);
+  font-size: var(--font-size-large);
+}
+
+main{
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  place-items: center;
+}
+
+.img-container{
+  width: 66%;
+}
+
+.img-container img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.text-container {
+  width: 100%;
+}
+
+.text-container h1{
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-x-large);
+}
+
+.text-container p{
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-normal);
+}
